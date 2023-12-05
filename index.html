@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <title>Minha página pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-toggle">
+        <button id="toggleButton">☰</button>
+    </div>
+    
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#header">Início</a></li>
+            <li><a href="#education">Educação</a></li>
+            <li><a href="#experience">Experiência Profissional</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#form">Fale comigo</a></li>
+            <li><a href="#footer">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <header id="header">
+            <div class="profile-picture">
+                <img src="img/eu.jpg" alt="Foto de perfil">
+            </div>
+            <h1>Gabriel Fróes</h1>
+            <p>Rua Bernardete dos Santos Duarte  | Pouso Alegre, MG</p>
+            <p>Email: gfroes2015@gmail.com | Telefone: (35) 999795689</p>
+        </header>
+        
+        <section id="education" class="education">
+            <h2>Educação</h2>
+            <div class="item">
+                <h3>Universidade do Vale do Sapucaí</h3>
+                <p>Bacharelado em Sistemas de Informação</p>
+                <p>4 Periodo</p>
+            </div>
+            
+        </section>
+        
+        <section id="experience" class="experience">
+            <h1>Experiência Profissional</h1>
+            <h3>Atualmente Procurando estagio</h3>
+        </section>
+        
+        <section id="skills" class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Java</li>
+                <li>Programação oriantada a objetos</li>
+                <li>Linguagem SQL</li>
+                <li>Gerenciamento de projetos</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h1 class="h1-form">Fale comigo</h1>
+
+            <form id="form">
+                <label for="name">Nome: </label>
+                <input type="text" id="name">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message"></textarea>
+
+                <button type="submit" onclick="imprimir()">Enviar</button>
+            </form>
+        </section>
+
+        <footer id="footer" class="footer">
+            <p>© 2023 Gabriel Fróes. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
